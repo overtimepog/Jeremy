@@ -8,6 +8,7 @@ const { wrapText } = require('../../util/Canvas');
 const { TWITTER_KEY, TWITTER_SECRET } = process.env;
 Discord = require("discord.js")
 const Meme = require("meme-api");
+const memer = new Meme();
 
 module.exports = class TweetCommand extends Command {
 	constructor(client) {
@@ -57,7 +58,7 @@ module.exports = class TweetCommand extends Command {
 
 	async run(msg, { user, text }) {
 		const username = user.toString()
-			Meme.tweet(user, username, text).then(image => {
+			memer.tweet(user, username, text).then(image => {
 				//now you have a "BUFFER", for Discord create an attachment
 			const attachment = new Discord.MessageAttachment(image, "tweet.png");
 			  msg.channel.send(attachment)
