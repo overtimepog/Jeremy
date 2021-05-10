@@ -6,7 +6,7 @@ module.exports = class DeleteCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'delete',
-			aliases: ['delete'],
+			aliases: ['delete', 'trash'],
 			group: 'edit-meme',
 			memberName: 'delete',
 			description: 'delete some trash',
