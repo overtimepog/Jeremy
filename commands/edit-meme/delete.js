@@ -1,5 +1,6 @@
 const Command = require('../../structures/Command');
 const DIG = require("discord-image-generation");
+const Discord = require("discord.js")
 
 module.exports = class DeleteCommand extends Command {
 	constructor(client) {
