@@ -43,6 +43,6 @@ module.exports = class DeleteCommand extends Command {
 	async run(msg, { image }) {
         let img = await new DIG.Delete().getImage(image)
 		let attach = new Discord.MessageAttachment(img, "delete.png");;
-        return message.channel.send(attach)
+        return msg.channel.send(attach)
 	}
 };
