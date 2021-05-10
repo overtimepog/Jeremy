@@ -1,23 +1,27 @@
 [
 	{
 		"text": "The Best Xiao Clone",
-		"type": "PLAYING",
-		"url": "https://www.twitch.tv/rainbow_Jeremy"
+		"type": "PLAYING"
 	},
 	{
 		"text": "j!help",
-		"type": "PLAYING",
-		"url": "https://www.twitch.tv/rainbow_Jeremy"
+		"type": "PLAYING"
 	},
 	{
 		"text": "The Best Racoon on Discord",
-		"type": "PLAYING",
-		"url": "https://www.twitch.tv/rainbow_Jeremy"
+		"type": "PLAYING"
 	},
 	{
 		"text": "In the Trash",
-		"type": "PLAYING",
-		"url": "https://www.twitch.tv/rainbow_Jeremy"
+		"type": "PLAYING"
+	},
+	{
+		"text": "TF2",
+		"type": "PLAYING"
+	},
+	{
+		"text": "JeremyRacTF2 on twitter",
+		"type": "PLAYING"
 	}
 
 

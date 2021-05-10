@@ -81,7 +81,7 @@ module.exports = class Util {
 	static formatNumber(number, minimumFractionDigits = 0) {
 		return Number.parseFloat(number).toLocaleString(undefined, {
 			minimumFractionDigits,
-			maximumFractionDigits: 2
+			maximumFractionDigits: 10
 		});
 	}
 
