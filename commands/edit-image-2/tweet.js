@@ -1,20 +1,13 @@
 const Command = require('../../structures/Command');
-const { createCanvas, loadImage } = require('canvas');
-const moment = require('moment');
-const request = require('node-superfetch');
-const path = require('path');
-const { base64, formatNumberK } = require('../../util/Util');
-const { wrapText } = require('../../util/Canvas');
-const { TWITTER_KEY, TWITTER_SECRET } = process.env;
 Discord = require("discord.js")
-const Meme = require("meme-api");
+const Meme = require("memer-api");
 const memer = new Meme();
 
 module.exports = class TweetCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'tweet',
-			aliases: ['fake-tweet', 'twitter-tweet', 'fake-twitter-tweet'],
+			aliases: ['tweet', 'twitter-tweet', 'fake-twitter-tweet'],
 			group: 'edit-image-2',
 			memberName: 'tweet',
 			description: 'Sends a Twitter tweet with the user and text of your choice.',
@@ -23,20 +16,6 @@ module.exports = class TweetCommand extends Command {
 				duration: 10
 			},
 			clientPermissions: ['ATTACH_FILES'],
-			credit: [
-				{
-					name: 'Twitter',
-					url: 'https://twitter.com/',
-					reason: 'Image, API',
-					reasonURL: 'https://developer.twitter.com/en/docs.html'
-				},
-				{
-					name: 'Google',
-					url: 'https://www.google.com/',
-					reason: 'Noto Font',
-					reasonURL: 'https://www.google.com/get/noto/'
-				}
-			],
 			args: [
 				{
 					key: 'user',
@@ -52,8 +31,6 @@ module.exports = class TweetCommand extends Command {
 				}
 			]
 		});
-
-		this.token = null;
 	}
 
 	async run(msg, { user, text }) {
