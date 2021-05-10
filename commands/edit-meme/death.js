@@ -41,7 +41,7 @@ module.exports = class DeathCommand extends Command {
 	}
 
 	async run(msg, { image }) {
-        let img = await new DIG.Death().getImage(image)
+        let img = await new DIG.Rip().getImage(image)
 		let attach = new Discord.MessageAttachment(img, "death.png");;
         return msg.channel.send(attach)
 	}
