@@ -57,7 +57,7 @@ module.exports = class TweetCommand extends Command {
 	}
 
 	async run(msg, { user, text }) {
-		const username = msg.user.username
+		const username = user.toString()
 			memer.tweet(user, username, text).then(image => {
 				//now you have a "BUFFER", for Discord create an attachment
 			const attachment = new Discord.MessageAttachment(image, "tweet.png");
