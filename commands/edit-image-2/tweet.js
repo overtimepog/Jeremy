@@ -18,10 +18,15 @@ module.exports = class TweetCommand extends Command {
 			clientPermissions: ['ATTACH_FILES'],
 			args: [
 				{
-					key: 'user',
-					prompt: 'What user should say the tweet? Use the handle, not the name.',
+					key: 'avatar',
+					prompt: 'What user should say the tweet?',
 					type: 'image-or-avatar',
 					default: msg => msg.author.displayAvatarURL({ format: 'png', size: 512 })
+				},
+				{
+					key: 'user',
+					prompt: 'Whats this persons twitter name?',
+					type: 'string',
 				},
 				{
 					key: 'text',
@@ -33,9 +38,8 @@ module.exports = class TweetCommand extends Command {
 		});
 	}
 
-	async run(msg, { user, text }) {
-		const username = user.toString()
-			memer.tweet(user, username, text).then(image => {
+	async run(msg, { avatar, user, text }) {
+			memer.tweet(avatar, user, text).then(image => {
 				//now you have a "BUFFER", for Discord create an attachment
 			const attachment = new Discord.MessageAttachment(image, "tweet.png");
 			  msg.channel.send(attachment)
