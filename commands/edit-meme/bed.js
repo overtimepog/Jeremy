@@ -32,7 +32,7 @@ module.exports = class BedCommand extends Command {
 	}
 
 	async run(msg, { image1, image2 }) {
-        let img = await new DIG.bed().getImage(image1 , image2)
+        let img = await new DIG.Bed().getImage(image1, image2)
 		let attach = new Discord.MessageAttachment(img, "bed.png");;
         return msg.channel.send(attach)
 	}
