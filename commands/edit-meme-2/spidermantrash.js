@@ -6,7 +6,7 @@ module.exports = class TrashCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'trash',
-			aliases: ['SMtrash', 'trash', 'spidermantrash'],
+			aliases: ['smtrash', 'trash', 'spidermantrash'],
 			group: 'edit-meme-2',
 			memberName: 'trash',
 			description: 'ur trash',
