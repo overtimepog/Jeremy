@@ -2,14 +2,14 @@ const Command = require('../../structures/Command');
 const DIG = require("discord-image-generation");
 const Discord = require("discord.js")
 
-module.exports = class DeathCommand extends Command {
+module.exports = class FuneralCommand extends Command {
 	constructor(client) {
 		super(client, {
-			name: 'death',
+			name: 'funeral',
 			aliases: ['death'],
 			group: 'edit-meme',
-			memberName: 'death',
-			description: 'A soldiers death',
+			memberName: 'funeral',
+			description: 'A soldiers funeral',
 			throttling: {
 				usages: 1,
 				duration: 10
