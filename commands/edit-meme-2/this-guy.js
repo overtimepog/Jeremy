@@ -9,7 +9,7 @@ module.exports = class ThisGuyCommand extends Command {
 		super(client, {
 			name: 'this-guy',
 			aliases: ['get-a-load-of-this-guy', 'get-a-load-of'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'this-guy',
 			description: 'Draws an image or a user\'s avatar over the "Get a load of this guy" meme.',
 			throttling: {

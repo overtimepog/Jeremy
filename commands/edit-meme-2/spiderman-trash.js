@@ -7,7 +7,7 @@ module.exports = class TrashCommand extends Command {
 		super(client, {
 			name: 'trash',
 			aliases: ['smtrash', 'spidermantrash'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'trash',
 			description: 'ur trash',
 			throttling: {

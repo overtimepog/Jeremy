@@ -8,7 +8,7 @@ module.exports = class WorseThanHitlerCommand extends Command {
 		super(client, {
 			name: 'worse-than-hitler',
 			aliases: ['hitler'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'worse-than-hitler',
 			description: 'Draws a user\'s avatar over Family Guy\'s "Worse Than Hitler" meme.',
 			throttling: {

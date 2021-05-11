@@ -8,7 +8,7 @@ module.exports = class VietnamFlashbacksCommand extends Command {
 		super(client, {
 			name: 'vietnam-flashbacks',
 			aliases: ['nam-flashbacks', 'vietnam', 'nam'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'vietnam-flashbacks',
 			description: 'Edits Vietnam flashbacks behind an image or a user\'s avatar.',
 			throttling: {

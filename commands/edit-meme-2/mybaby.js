@@ -7,7 +7,7 @@ module.exports = class MyBabyCommand extends Command {
 		super(client, {
 			name: 'mybaby',
 			aliases: ['affect', 'affect-my-baby', 'mom-affect'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'mybaby',
 			description: 'no it doesnt affect my baby',
 			throttling: {

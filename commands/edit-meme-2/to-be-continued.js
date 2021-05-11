@@ -9,7 +9,7 @@ module.exports = class ToBeContinuedCommand extends Command {
 		super(client, {
 			name: 'to-be-continued',
 			aliases: ['tbc', 'つづく', 'tsudzuku', 'tsuzuku'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'to-be-continued',
 			description: 'Draws an image with the "To Be Continued..." arrow.',
 			throttling: {

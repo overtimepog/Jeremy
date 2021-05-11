@@ -9,7 +9,7 @@ module.exports = class WorthlessCommand extends Command {
 		super(client, {
 			name: 'worthless',
 			aliases: ['this-is-worthless'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'worthless',
 			description: 'Draws an image or a user\'s avatar over Gravity Falls\' "This is worthless." meme.',
 			throttling: {

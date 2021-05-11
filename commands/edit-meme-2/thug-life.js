@@ -9,7 +9,7 @@ module.exports = class ThugLifeCommand extends Command {
 		super(client, {
 			name: 'thug-life',
 			aliases: ['thug'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'thug-life',
 			description: 'Draws "Thug Life" over an image or a user\'s avatar.',
 			throttling: {

@@ -9,7 +9,7 @@ module.exports = class JojoWineCommand extends Command {
 		super(client, {
 			name: 'jojo-wine',
 			aliases: ['jojo-swill', 'jojo-wine', 'jojowine', 'jojoswill'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'jojo-wine',
 			description: 'jojo doesnt like this wine with the text of your choice.',
 			throttling: {

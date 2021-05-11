@@ -7,7 +7,7 @@ module.exports = class NotstonksCommand extends Command {
 		super(client, {
 			name: 'notstonks',
 			aliases: ['notstonk', 'not-stonk', 'not-stonks'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'notstonks',
 			description: 'make a user not stonks',
 			throttling: {

@@ -8,7 +8,7 @@ module.exports = class TwoButtonsCommand extends Command {
 		super(client, {
 			name: 'two-buttons',
 			aliases: ['buttons'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'two-buttons',
 			description: 'Sends a "Two Buttons" meme with the buttons of your choice.',
 			throttling: {

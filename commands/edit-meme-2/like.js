@@ -8,7 +8,7 @@ module.exports = class LikeCommand extends Command {
 		super(client, {
 			name: 'like',
 			aliases: ['liked', 'everyone-liked-that', 'liked-that', 'everyone-liked'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'like',
 			description: 'Sends an "Everyone Liked That" meme with the image of your choice.',
 			throttling: {

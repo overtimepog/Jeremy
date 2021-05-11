@@ -8,7 +8,7 @@ module.exports = class LisaPresentationCommand extends Command {
 		super(client, {
 			name: 'lisa-presentation',
 			aliases: ['lisa'],
-			group: 'edit-meme',
+			group: 'edit-meme-2',
 			memberName: 'lisa-presentation',
 			description: 'Sends a "Lisa Presentation" meme with the presentation of your choice.',
 			throttling: {
