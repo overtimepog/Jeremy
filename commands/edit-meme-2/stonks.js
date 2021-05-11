@@ -2,14 +2,14 @@ const Command = require('../../structures/Command');
 const DIG = require("discord-image-generation");
 const Discord = require("discord.js")
 
-module.exports = class TrashCommand extends Command {
+module.exports = class StonksCommand extends Command {
 	constructor(client) {
 		super(client, {
-			name: 'trash',
-			aliases: ['smtrash', 'trash', 'spidermantrash'],
+			name: 'stonks',
+			aliases: ['stonk'],
 			group: 'edit-meme-2',
-			memberName: 'trash',
-			description: 'ur trash',
+			memberName: 'stonks',
+			description: 'make a user stonks',
 			throttling: {
 				usages: 1,
 				duration: 10
@@ -26,13 +26,13 @@ module.exports = class TrashCommand extends Command {
 					name: 'Wikimedia Commons',
 					url: 'https://commons.wikimedia.org/wiki/Main_Page',
 					reason: 'Image',
-					reasonURL: 'https://commons.wikimedia.org/wiki/File:trash_blank.svg'
+					reasonURL: 'https://commons.wikimedia.org/wiki/File:stonks_blank.svg'
 				}
 			],
 			args: [
 				{
 					key: 'image',
-					prompt: 'who is the trash?',
+					prompt: 'who is the stonks?',
 					type: 'image-or-avatar',
 					default: msg => msg.author.displayAvatarURL({ format: 'png', size: 512 })
 				}
@@ -41,8 +41,8 @@ module.exports = class TrashCommand extends Command {
 	}
 
 	async run(msg, { image }) {
-        let img = await new DIG.Trash().getImage(image)
-		let attach = new Discord.MessageAttachment(img, "trash.png");;
+        let img = await new DIG.Stonk().getImage(image)
+		let attach = new Discord.MessageAttachment(img, "stonks.png");;
         return msg.channel.send(attach)
 	}
 };
