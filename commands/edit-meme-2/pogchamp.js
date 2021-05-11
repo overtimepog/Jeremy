@@ -7,7 +7,7 @@ module.exports = class PogchampCommand extends Command {
 		super(client, {
 			name: 'pogchamp',
 			aliases: ['pog'],
-			group: 'edit-meme-2',
+			group: 'edit-meme',
 			memberName: 'pogchamp',
 			description: 'Sends a pogchamp duplicated however many times you want.',
 			throttling: {

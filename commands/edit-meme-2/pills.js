@@ -8,7 +8,7 @@ module.exports = class PillsCommand extends Command {
 		super(client, {
 			name: 'pills',
 			aliases: ['hard-to-swallow-pills', 'hard-pills'],
-			group: 'edit-meme-2',
+			group: 'edit-meme',
 			memberName: 'pills',
 			description: 'Sends a "Hard to Swallow Pills" meme with the text of your choice.',
 			throttling: {

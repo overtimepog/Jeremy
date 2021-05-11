@@ -9,7 +9,7 @@ module.exports = class MetamorphosisCommand extends Command {
 		super(client, {
 			name: 'metamorphosis',
 			aliases: ['my-metamorphosis-begins', 'morph'],
-			group: 'edit-meme-2',
+			group: 'edit-meme',
 			memberName: 'metamorphosis',
 			description: 'Sends a "My Metamorphosis Begins" meme with the image and text of your choice.',
 			throttling: {

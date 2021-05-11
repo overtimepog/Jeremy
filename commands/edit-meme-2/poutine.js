@@ -7,7 +7,7 @@ module.exports = class PoutineCommand extends Command {
 		super(client, {
 			name: 'poutine',
 			aliases: ['poffice', 'dictator'],
-			group: 'edit-meme-2',
+			group: 'edit-meme',
 			memberName: 'poutine',
 			description: 'make a user the photo in poutines office',
 			clientPermissions: ['ATTACH_FILES'],

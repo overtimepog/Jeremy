@@ -8,7 +8,7 @@ module.exports = class LookAtThisPhotographCommand extends Command {
 		super(client, {
 			name: 'look-at-this-photograph',
 			aliases: ['nickelback', 'look-at-this-photo', 'photograph'],
-			group: 'edit-meme-2',
+			group: 'edit-meme',
 			memberName: 'look-at-this-photograph',
 			description: 'Draws an image or a user\'s avatar over Nickelback\'s photograph.',
 			throttling: {

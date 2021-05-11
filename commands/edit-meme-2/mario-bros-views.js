@@ -8,7 +8,7 @@ module.exports = class MarioBrosViewsCommand extends Command {
 		super(client, {
 			name: 'mario-bros-views',
 			aliases: ['mario-views', 'luigi-views', 'mario-luigi-views', 'mario-says', 'luigi-says'],
-			group: 'edit-meme-2',
+			group: 'edit-meme',
 			memberName: 'mario-bros-views',
 			description: 'Sends a "Mario Bros. Views" meme with the text of your choice.',
 			throttling: {

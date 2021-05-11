@@ -8,7 +8,7 @@ module.exports = class KyonGunCommand extends Command {
 		super(client, {
 			name: 'kyon-gun',
 			aliases: ['kyon-snapped', 'endless-eight'],
-			group: 'edit-meme-2',
+			group: 'edit-meme',
 			memberName: 'kyon-gun',
 			description: 'Draws an image or a user\'s avatar behind Kyon shooting a gun.',
 			throttling: {

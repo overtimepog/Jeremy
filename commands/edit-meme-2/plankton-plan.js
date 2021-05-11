@@ -9,7 +9,7 @@ module.exports = class PlanktonPlanCommand extends Command {
 		super(client, {
 			name: 'plankton-plan',
 			aliases: ['planktons-plan', 'plankton'],
-			group: 'edit-meme-2',
+			group: 'edit-meme',
 			memberName: 'plankton-plan',
 			description: 'Sends a Plankton\'s Plan meme with steps of your choice.',
 			throttling: {

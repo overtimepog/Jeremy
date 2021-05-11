@@ -13,7 +13,7 @@ module.exports = class PhoebeTeachingJoeyCommand extends Command {
 		super(client, {
 			name: 'phoebe-teaching-joey',
 			aliases: ['phoebe', 'phoebe-teach', 'joey', 'phoebe-teach-joey'],
-			group: 'edit-meme-2',
+			group: 'edit-meme',
 			memberName: 'phoebe-teaching-joey',
 			description: 'Sends a "Phoebe Teaching Joey" meme with text of your choice.',
 			throttling: {

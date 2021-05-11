@@ -9,7 +9,7 @@ module.exports = class MyCollectionGrowsCommand extends Command {
 		super(client, {
 			name: 'my-collection-grows',
 			aliases: ['my-collection-grows-richer', 'collection-grows', 'collection-grows-richer'],
-			group: 'edit-meme-2',
+			group: 'edit-meme',
 			memberName: 'my-collection-grows',
 			description: 'Sends a "My collection grows richer" Nekopara meme with the text of your choice.',
 			throttling: {
