@@ -34,6 +34,9 @@ module.exports = class AvatarCommand extends Command {
 		if (format === 'gif') formats.push('gif');
 		const embed = new MessageEmbed()
 			.setTitle(user.tag)
+			.setDescription(
+				formats.map(fmt => embedURL(displayFmts[fmt], user.displayAvatarURL({ format: fmt, size: 2048 }))).join(' | ')
+			)
 			.setImage(user.displayAvatarURL({ format, size: 2048 }))
 			.setColor(0x00AE86);
 		return msg.embed(embed);
