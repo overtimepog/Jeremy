@@ -33,7 +33,6 @@ module.exports = class InfoCommand extends Command {
 			.addField('❯ Servers', formatNumber(this.client.guilds.cache.size), true)
 			.addField('❯ Users', formatNumber(this.client.users.cache.size), true)
 			.addField('❯ Commands', formatNumber(this.client.registry.commands.size), true)
-			.addField('❯ Website', embedURL('Check it out', 'https://www.jeremyraccoon.com/'), true)
 			.addField('❯ Home Server',
 				this.client.options.invite ? embedURL('Invite', this.client.options.invite) : 'None', true)
 			.addField('❯ Invite', embedURL('Add Me', invite), true)
