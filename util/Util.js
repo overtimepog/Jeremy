@@ -190,9 +190,9 @@ module.exports = class Util {
 		});
 	}
 
-	static embedURL(title, url, display) {
-		return `[${title}](${url.replaceAll(')', '%29')}${display ? ` "${display}"` : ''})`;
-	}
+	//static embedURL(title, url, display) {
+		//return `[${title}](${url.replaceAll(')', '%29')}${display ? ` "${display}"` : ''})`;
+	//}
 
 	static stripInvites(str, { guild = true, bot = true, text = '[redacted invite]' } = {}) {
 		if (guild) str = str.replace(inviteRegex, text);
