@@ -13,10 +13,6 @@ module.exports = class DECTalkCommand extends Command {
 			memberName: 'dec-talk',
 			description: 'The world\'s best Text-to-Speech.',
 			guildOnly: true,
-			throttling: {
-				usages: 1,
-				duration: 10
-			},
 			userPermissions: ['CONNECT', 'SPEAK'],
 			credit: [
 				{
@@ -58,7 +54,7 @@ module.exports = class DECTalkCommand extends Command {
 		try {
 			await reactIfAble(msg, this.client.user, LOADING_EMOJI_ID, '💬');
 			const { body } = await request
-				.get('http://tts.cyzon.us/tts')
+				.get('http://tts.cyzon.us/tts?')
 				.query({ text });
 			const dispatcher = connection.play(Readable.from([body]));
 			this.client.dispatchers.set(msg.guild.id, dispatcher);
