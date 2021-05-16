@@ -7,7 +7,7 @@ module.exports = class ContrastCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'contrast',
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'contrast',
 			description: 'Draws an image or a user\'s avatar but with contrast.',
 			throttling: {

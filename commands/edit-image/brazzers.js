@@ -7,7 +7,7 @@ module.exports = class BrazzersCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'brazzers',
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'brazzers',
 			description: 'Draws an image with the Brazzers logo in the corner.',
 			nsfw: true,

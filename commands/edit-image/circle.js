@@ -7,7 +7,7 @@ module.exports = class CircleCommand extends Command {
 		super(client, {
 			name: 'circle',
 			aliases: ['preview-avatar', 'preview-ava', 'preview-pfp'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'circle',
 			description: 'Draws an image or a user\'s avatar as a circle.',
 			throttling: {

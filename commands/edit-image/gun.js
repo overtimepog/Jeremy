@@ -7,7 +7,7 @@ module.exports = class GunCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'gun',
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'gun',
 			description: 'Draws a gun over an image or a user\'s avatar.',
 			throttling: {

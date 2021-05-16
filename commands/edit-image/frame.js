@@ -11,7 +11,7 @@ module.exports = class FrameCommand extends Command {
 		super(client, {
 			name: 'frame',
 			aliases: ['picture-frame', 'photo-frame'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'frame',
 			description: 'Draws a frame around an image or a user\'s avatar.',
 			throttling: {

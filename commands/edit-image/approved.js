@@ -9,7 +9,7 @@ module.exports = class ApprovedCommand extends Command {
 		super(client, {
 			name: 'approved',
 			aliases: ['approve'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'approved',
 			description: 'Draws an "approved" stamp over an image or a user\'s avatar.',
 			throttling: {

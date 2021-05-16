@@ -6,7 +6,7 @@ module.exports = class ColorCommand extends Command {
 		super(client, {
 			name: 'color',
 			aliases: ['colour'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'color',
 			description: 'Sends an image of the color you choose.',
 			throttling: {

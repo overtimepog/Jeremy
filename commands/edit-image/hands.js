@@ -8,7 +8,7 @@ module.exports = class HandsCommand extends Command {
 		super(client, {
 			name: 'hands',
 			aliases: ['grab', 'pedo-hands'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'hands',
 			description: 'Draws creepy hands over an image or a user\'s avatar.',
 			throttling: {

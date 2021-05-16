@@ -8,7 +8,7 @@ module.exports = class BlurCommand extends Command {
 		super(client, {
 			name: 'blur',
 			aliases: ['gaussian', 'gaussian-blur', 'stackblur'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'blur',
 			description: 'Draws an image or a user\'s avatar but blurred.',
 			throttling: {

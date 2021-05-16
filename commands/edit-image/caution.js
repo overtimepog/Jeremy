@@ -8,7 +8,7 @@ module.exports = class CautionCommand extends Command {
 		super(client, {
 			name: 'caution',
 			aliases: ['caution-sign'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'caution',
 			description: 'Creates a caution sign with the text of your choice.',
 			throttling: {

@@ -7,7 +7,7 @@ module.exports = class CharcoalCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'charcoal',
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'charcoal',
 			description: 'Draws an image or a user\'s avatar but with charcoal.',
 			throttling: {

@@ -8,7 +8,7 @@ module.exports = class DangerCommand extends Command {
 		super(client, {
 			name: 'danger',
 			aliases: ['danger-sign'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'danger',
 			description: 'Creates a danger sign with the text of your choice.',
 			throttling: {

@@ -8,7 +8,7 @@ module.exports = class DesaturateCommand extends Command {
 		super(client, {
 			name: 'desaturate',
 			aliases: ['saturate'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'desaturate',
 			description: 'Draws an image or a user\'s avatar but desaturated.',
 			throttling: {

@@ -8,7 +8,7 @@ module.exports = class FishEyeCommand extends Command {
 		super(client, {
 			name: 'fish-eye',
 			aliases: ['bulge'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'fish-eye',
 			description: 'Draws an image or a user\'s avatar but with a fish-eye lens.',
 			throttling: {

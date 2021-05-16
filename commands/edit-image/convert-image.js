@@ -13,7 +13,7 @@ module.exports = class ConvertImageCommand extends Command {
 		super(client, {
 			name: 'convert-image',
 			aliases: ['convert-img', 'image-convert', 'img-convert'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'convert-image',
 			description: 'Converts an image from one format to another.',
 			details: `**Formats:** ${Object.keys(formats).join(', ')}`,

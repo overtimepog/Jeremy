@@ -7,7 +7,7 @@ module.exports = class InvertCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'invert',
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'invert',
 			description: 'Draws an image or a user\'s avatar but inverted.',
 			throttling: {

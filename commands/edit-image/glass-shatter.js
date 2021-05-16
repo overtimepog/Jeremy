@@ -8,7 +8,7 @@ module.exports = class GlassShatterCommand extends Command {
 		super(client, {
 			name: 'glass-shatter',
 			aliases: ['shatter', 'glass'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'glass-shatter',
 			description: 'Draws an image or a user\'s avatar with a glass shatter in front of it.',
 			throttling: {

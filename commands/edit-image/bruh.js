@@ -8,7 +8,7 @@ module.exports = class BruhCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'bruh',
-			group: 'edit-image-2',
+			group: 'edit-meme-2',
 			memberName: 'bruh',
 			description: 'Draws a "bruh" stamp over an image or a user\'s avatar.',
 			throttling: {

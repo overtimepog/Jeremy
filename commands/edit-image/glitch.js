@@ -7,7 +7,7 @@ module.exports = class GlitchCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'glitch',
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'glitch',
 			description: 'Draws an image or a user\'s avatar but glitched.',
 			throttling: {

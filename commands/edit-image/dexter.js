@@ -8,7 +8,7 @@ module.exports = class DexterCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'dexter',
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'dexter',
 			description: 'Draws an image or a user\'s avatar over the screen of Dexter from Pokémon.',
 			throttling: {

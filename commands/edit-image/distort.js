@@ -7,7 +7,7 @@ module.exports = class DistortCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'distort',
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'distort',
 			description: 'Draws an image or a user\'s avatar but distorted.',
 			throttling: {

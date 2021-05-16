@@ -15,7 +15,7 @@ module.exports = class crabraveCommand extends Command {
 		super(client, {
 			name: 'crabrave',
 			aliases: ['crabrave', 'crab'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'crabrave',
 			description: 'Sends crab rave gif with text of the users choice',
 			throttling: {

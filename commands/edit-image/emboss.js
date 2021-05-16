@@ -7,7 +7,7 @@ module.exports = class EmbossCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'emboss',
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'emboss',
 			description: 'Draws an image or a user\'s avatar but embossed.',
 			throttling: {

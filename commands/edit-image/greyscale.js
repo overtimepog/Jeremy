@@ -8,7 +8,7 @@ module.exports = class GreyscaleCommand extends Command {
 		super(client, {
 			name: 'greyscale',
 			aliases: ['grayscale'],
-			group: 'edit-image',
+			group: 'edit-meme',
 			memberName: 'greyscale',
 			description: 'Draws an image or a user\'s avatar in greyscale.',
 			throttling: {
