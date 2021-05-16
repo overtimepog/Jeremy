@@ -7,7 +7,7 @@ module.exports = class YoutubeCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'youtube',
-			aliases: ['youtube', 'youtube-comment', 'comment'],
+			aliases: ['youtube', 'youtube-comment', 'comment', 'yt', 'yt-comment'],
 			group: 'edit-image-2',
 			memberName: 'youtube',
 			description: 'Sends a youtube comment with the user and text of your choice.',
