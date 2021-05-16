@@ -26,8 +26,8 @@ module.exports = class jailCommand extends Command {
 	}
 
 	async run(msg, { image }) {
-        memer.jail(avatar).then(image => {
-      	const attachment = new Discord.MessageAttachment(image, "jail.png");
+        memer.jail(image).then(img => {
+      	const attachment = new Discord.MessageAttachment(img, "jail.png");
       	msg.channel.send(attachment)
 		})
 	}
