@@ -17,14 +17,14 @@ client.registry
 	.registerTypesIn(path.join(__dirname, 'types'))
 	.registerGroups([
 		['info', 'Discord Information'],
-		['random-res', 'Random Response'],
-		['random-img', 'Random Image'],
-		['random-seed', 'Seeded Randomizers'],
-		['single', 'Single Response'],
 		['edit-meme', 'Meme Generators'],
 		['edit-meme-2', 'Meme Generators 2'],
 		['edit-meme-3', 'Meme Generators 3'],
 		['edit-meme-4', 'Meme Generators 4'],
+		['random-img', 'Random Image'],
+		['random-res', 'Random Response'],
+		['random-seed', 'Seeded Randomizers'],
+		['single', 'Single Response'],
 		['voice', 'Play Audio'],
 		['other', 'Other'],
 		['util-public', 'Utility'],
