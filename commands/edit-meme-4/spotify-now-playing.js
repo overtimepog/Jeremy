@@ -8,7 +8,7 @@ module.exports = class SpotifyNowPlayingCommand extends Command {
 		super(client, {
 			name: 'spotify-now-playing',
 			aliases: ['now-playing-spotify', 'spotify', 'spotify-playing', 'playing-spotify'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'spotify-now-playing',
 			description: 'Draws an image or a user\'s avatar on a Spotify album with the name and artist of your choice.',
 			throttling: {

@@ -6,7 +6,7 @@ module.exports = class failureCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'failure',
-			group: 'edit-meme-2-2',
+			group: 'edit-meme-2',
 			memberName: 'failure',
 			description: 'you\'re a failure',
 			throttling: {

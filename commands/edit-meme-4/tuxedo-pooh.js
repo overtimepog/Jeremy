@@ -8,7 +8,7 @@ module.exports = class TuxedoPoohCommand extends Command {
 		super(client, {
 			name: 'tuxedo-pooh',
 			aliases: ['tuxedo-winnie', 'tuxedo-winnie-the-pooh', 'tux-pooh', 'tux-winnie', 'tux-winnie-the-pooh'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'tuxedo-pooh',
 			description: 'Sends a "Tuxedo Winnie the Pooh" meme with the text of your choice.',
 			throttling: {

@@ -8,7 +8,7 @@ module.exports = class SpidermanPointingCommand extends Command {
 		super(client, {
 			name: 'spiderman-pointing',
 			aliases: ['spiderman-pointing-at-spiderman', 'spiderman', 'spiderman-point'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'spiderman-pointing',
 			description: 'Sends a "Spiderman Pointing at Spiderman" meme with the text of your choice.',
 			throttling: {

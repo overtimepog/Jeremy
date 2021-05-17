@@ -7,7 +7,7 @@ module.exports = class DisabilityCommand extends Command {
 		super(client, {
 			name: 'disability',
 			aliases: ['disabled'],
-			group: 'edit-meme-2-2',
+			group: 'edit-meme-2',
 			memberName: 'disability',
 			description: 'lol ur disabled',
 			throttling: {

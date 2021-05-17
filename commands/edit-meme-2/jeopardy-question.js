@@ -7,7 +7,7 @@ module.exports = class JeopardyQuestionCommand extends Command {
 		super(client, {
 			name: 'jeopardy-question',
 			aliases: ['clue-card', 'jeopardy-clue-card', 'jeopardy-clue'],
-			group: 'edit-meme-2-2',
+			group: 'edit-meme-2',
 			memberName: 'jeopardy-question',
 			description: 'Sends a Jeopardy Question with the text of your choice.',
 			throttling: {

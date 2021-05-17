@@ -6,7 +6,7 @@ module.exports = class SquareCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'square',
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'square',
 			description: 'Draws an image or a user\'s avatar as a square.',
 			throttling: {

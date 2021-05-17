@@ -8,7 +8,7 @@ module.exports = class SteamCardCommand extends Command {
 		super(client, {
 			name: 'steam-card',
 			aliases: ['valve-card'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'steam-card',
 			description: 'Draws an image or a user\'s avatar on a Steam Trading Card.',
 			throttling: {

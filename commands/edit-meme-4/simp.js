@@ -8,7 +8,7 @@ module.exports = class SimpCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'simp',
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'simp',
 			description: 'Draws a "simp" stamp over an image or a user\'s avatar.',
 			throttling: {

@@ -7,7 +7,7 @@ module.exports = class TintCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'tint',
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'tint',
 			description: 'Draws an image or a user\'s avatar but tinted a specific color.',
 			throttling: {

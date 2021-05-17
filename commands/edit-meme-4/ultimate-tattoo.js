@@ -9,7 +9,7 @@ module.exports = class UltimateTattooCommand extends Command {
 		super(client, {
 			name: 'ultimate-tattoo',
 			aliases: ['the-ultimate-tattoo', 'tattoo'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'ultimate-tattoo',
 			description: 'Draws an image or a user\'s avatar as "The Ultimate Tattoo".',
 			throttling: {

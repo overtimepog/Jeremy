@@ -8,7 +8,7 @@ module.exports = class SonicSaysCommand extends Command {
 		super(client, {
 			name: 'sonic-says',
 			aliases: ['sonic-say', 'sonic'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'sonic-says',
 			description: 'Sends a "Sonic Says" meme with the quote of your choice.',
 			throttling: {

@@ -9,7 +9,7 @@ module.exports = class YouDiedCommand extends Command {
 		super(client, {
 			name: 'you-died',
 			aliases: ['died', 'dead'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'you-died',
 			description: 'Sends a "You Died" screen over an image or a user\'s avatar.',
 			throttling: {

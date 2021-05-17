@@ -14,7 +14,7 @@ module.exports = class YuGiOhGenCommand extends Command {
 		super(client, {
 			name: 'yu-gi-oh-gen',
 			aliases: ['ygo-gen', 'yu-gi-oh-generator', 'ygo-generator'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'yu-gi-oh-gen',
 			description: 'Draws an image or a user\'s avatar on a Yu-Gi-Oh! Trading Card with the text of your choice.',
 			throttling: {

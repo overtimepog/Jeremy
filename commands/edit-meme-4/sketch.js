@@ -8,7 +8,7 @@ module.exports = class SketchCommand extends Command {
 		super(client, {
 			name: 'sketch',
 			aliases: ['pencil-sketch'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'sketch',
 			description: 'Draws an image or a user\'s avatar but sketched.',
 			throttling: {

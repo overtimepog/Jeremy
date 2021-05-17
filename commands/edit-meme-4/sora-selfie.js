@@ -8,7 +8,7 @@ module.exports = class SoraSelfieCommand extends Command {
 		super(client, {
 			name: 'sora-selfie',
 			aliases: ['sora', 'sora-camera', 'sora-cam'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'sora-selfie',
 			description: 'Draws an image or a user\'s avatar behind Sora taking a selfie.',
 			throttling: {

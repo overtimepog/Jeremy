@@ -20,7 +20,7 @@ module.exports = class TrainerCardCommand extends Command {
 				'pokémon-tc',
 				'ptc'
 			],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'trainer-card',
 			description: 'Creates a trainer card for a Pokémon trainer.',
 			details: stripIndents`

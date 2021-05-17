@@ -8,7 +8,7 @@ module.exports = class SquishCommand extends Command {
 		super(client, {
 			name: 'squish',
 			aliases: ['stretch', 'flatten', 'flat'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'squish',
 			description: 'Draws an image or a user\'s avatar but squished across the X or Y axis.',
 			throttling: {

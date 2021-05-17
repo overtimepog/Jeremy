@@ -6,7 +6,7 @@ module.exports = class SnapcodeCommand extends Command {
 		super(client, {
 			name: 'snapcode',
 			aliases: ['snapchat'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'snapcode',
 			description: 'Responds with the Snapcode of a Snapchat user.',
 			clientPermissions: ['ATTACH_FILES'],

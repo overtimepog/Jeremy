@@ -11,7 +11,7 @@ module.exports = class ThatAFactCommand extends Command {
 		super(client, {
 			name: 'thats-a-fact',
 			aliases: ['thats-fact', 'that-fact', 'thatfact', 'thatsfact'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'thats-a-fact',
 			description: 'Sends a "and that a fact" meme with the text of your choice.',
 			throttling: {

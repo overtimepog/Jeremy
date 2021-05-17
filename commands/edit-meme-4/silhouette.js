@@ -7,7 +7,7 @@ module.exports = class SilhouetteCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'silhouette',
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'silhouette',
 			description: 'Draws a silhouette of an image or a user\'s avatar.',
 			throttling: {

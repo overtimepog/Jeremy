@@ -7,7 +7,7 @@ module.exports = class SwirlCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'swirl',
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'swirl',
 			description: 'Draws an image or a user\'s avatar but swirled.',
 			throttling: {

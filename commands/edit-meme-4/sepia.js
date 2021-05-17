@@ -7,7 +7,7 @@ module.exports = class SepiaCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'sepia',
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'sepia',
 			description: 'Draws an image or a user\'s avatar in sepia.',
 			throttling: {

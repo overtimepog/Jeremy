@@ -9,7 +9,7 @@ module.exports = class WildPokemonCommand extends Command {
 		super(client, {
 			name: 'wild-pokemon',
 			aliases: ['wild-pokemon-appears', 'wild-appears', 'wild-pokémon', 'wild-pokémon-appears', 'wild-pkmn'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'wild-pokemon',
 			description: 'Draws an image or a user\'s avatar over a wild Pokémon appearance.',
 			throttling: {

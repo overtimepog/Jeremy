@@ -8,7 +8,7 @@ module.exports = class SpongebobBurnCommand extends Command {
 		super(client, {
 			name: 'spongebob-burn',
 			aliases: ['sponge-burn', 'spongebob-fire', 'sponge-fire'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'spongebob-burn',
 			description: 'Sends a "Spongebob Throwing Something into a Fire" meme with words of your choice.',
 			throttling: {

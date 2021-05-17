@@ -8,7 +8,7 @@ module.exports = class SkyrimSkillCommand extends Command {
 		super(client, {
 			name: 'skyrim-skill',
 			aliases: ['skyrim-level', 'skyrim'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'skyrim-skill',
 			description: 'Sends a "Skyrim Skill" meme with the skill and image of your choice.',
 			throttling: {

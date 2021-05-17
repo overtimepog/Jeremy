@@ -8,7 +8,7 @@ module.exports = class SubtitleCommand extends Command {
 		super(client, {
 			name: 'subtitle',
 			aliases: ['closed-caption', 'closed-captions', 'cc', 'st'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'subtitle',
 			description: 'Adds subtitles to an image.',
 			throttling: {

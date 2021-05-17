@@ -8,7 +8,7 @@ module.exports = class LiquidRescaleCommand extends Command {
 		super(client, {
 			name: 'liquid-rescale',
 			aliases: ['magick', 'magik'],
-			group: 'edit-meme-2-2',
+			group: 'edit-meme-2',
 			memberName: 'liquid-rescale',
 			description: 'Draws an image or a user\'s avatar but with liquid rescale from ImageMagick.',
 			throttling: {

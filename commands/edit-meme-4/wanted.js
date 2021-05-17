@@ -9,7 +9,7 @@ module.exports = class WantedCommand extends Command {
 		super(client, {
 			name: 'wanted',
 			aliases: ['wanted-poster'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'wanted',
 			description: 'Draws an image or a user\'s avatar over a wanted poster.',
 			throttling: {

@@ -4,7 +4,7 @@ module.exports = class RenderCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'render',
-			group: 'edit-meme-2-2',
+			group: 'edit-meme-2',
 			memberName: 'render',
 			description: 'renders discord conversations as Ace Attorney conversations',
 			throttling: {

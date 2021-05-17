@@ -8,7 +8,7 @@ module.exports = class ScrollOfTruthCommand extends Command {
 		super(client, {
 			name: 'scroll-of-truth',
 			aliases: ['truth', 'scroll', 'truth-scroll', 'scroll-truth'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'scroll-of-truth',
 			description: 'Sends a "Scroll of Truth" meme with the text of your choice.',
 			throttling: {

@@ -8,7 +8,7 @@ module.exports = class SpongebobTimeCardCommand extends Command {
 		super(client, {
 			name: 'spongebob-time-card',
 			aliases: ['time-card', 'sb-time-card', 'spongebob-card', 'sb-card', 'sponge-card', 'sponge-time-card'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'spongebob-time-card',
 			description: 'Sends a Spongebob Time Card with the text of your choice.',
 			throttling: {

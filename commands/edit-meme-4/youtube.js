@@ -8,7 +8,7 @@ module.exports = class YoutubeCommand extends Command {
 		super(client, {
 			name: 'youtube',
 			aliases: ['youtube', 'youtube-comment', 'comment', 'yt', 'yt-comment'],
-			group: 'edit-meme-4-4',
+			group: 'edit-meme-4',
 			memberName: 'youtube',
 			description: 'Sends a youtube comment with the user and text of your choice.',
 			throttling: {
