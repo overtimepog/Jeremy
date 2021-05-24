@@ -27,6 +27,7 @@ module.exports = class TweetCommand extends Command {
 					key: 'user',
 					prompt: 'Whats this persons twitter name?',
 					type: 'string',
+					default: msg => msg.author.username
 				},
 				{
 					key: 'text',
