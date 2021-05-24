@@ -1,5 +1,6 @@
 const Command = require('../../structures/Command');
-const DIG = require("discord-image-generation");
+const Meme = require("memer-api");
+const memer = new Meme();
 const Discord = require("discord.js")
 
 module.exports = class ByeMomCommand extends Command {
