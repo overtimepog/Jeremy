@@ -33,12 +33,12 @@ module.exports = class Draw25Command extends Command {
 			args: [
 				{
 					key: 'image',
-					prompt: 'who is drawing the cards?',
+					prompt: 'who is drawing the text?',
 					type: 'image-or-avatar',
 					default: msg => msg.author.displayAvatarURL({ format: 'png', size: 256 })
 				},
 				{
-					key: 'cards',
+					key: 'text',
 					prompt: 'What should the text of the card be?',
 					type: 'string',
 					max: 50
@@ -47,20 +47,20 @@ module.exports = class Draw25Command extends Command {
 		});
 	}
 
-    async run(msg, { cards, image }) {
+    async run(msg, { text, image }) {
 	const base = await loadImage(path.join(__dirname, '..', '..', 'assets', 'images', 'draw25.png'));
 		const { body } = await request.get(image);
 			const data = await loadImage(body);
 			const canvas = createCanvas(base.width, base.height);
 			const ctx = canvas.getContext('2d');
-			const card = await wrapText(ctx, "​    " + (cards.trim()), 200);
+			const card = await wrapText(ctx, "​    " + (text.trim()), 200);
 			ctx.drawImage(base, 0, 0);
 			ctx.drawImage(data, 317, 36, 105, 105);
 			ctx.textBaseline = 'top';
 			ctx.textAlign = 'center';
 			ctx.fillStyle = "white"
 			ctx.font = '25px Noto';
-			ctx.fillText(card.join('\n'), 120, 164, 220);
+			ctx.fillText(card.join('\n'), 120, 165, 220);
         return msg.say({ files: [{ attachment: canvas.toBuffer(), name: 'draw25.png' }] });
     }
 };
