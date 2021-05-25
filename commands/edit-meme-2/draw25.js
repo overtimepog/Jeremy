@@ -32,7 +32,7 @@ module.exports = class Draw25Command extends Command {
 			],
 			args: [
 				{
-					key: 'avatar',
+					key: 'image',
 					prompt: 'who is drawing the cards?',
 					type: 'image-or-avatar',
 					default: msg => msg.author.displayAvatarURL({ format: 'png', size: 512 })
@@ -41,25 +41,25 @@ module.exports = class Draw25Command extends Command {
 					key: 'cards',
 					prompt: 'What should the text of the card be?',
 					type: 'string',
-					max: 50
+					max: 10
 				}
 			]
 		});
 	}
 
-    async run(msg, { cards, avatar }) {
-        const base = await loadImage(path.join(__dirname, '..', '..', 'assets', 'images', 'draw25.png'));
-        const canvas = createCanvas(base.width, base.height);
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(base, 0, 0);
-        ctx.font = '25px Noto';
-        const card = await wrapText(ctx, "​    " + (cards.trim()), 150);
-        ctx.fillText(card.join('\n'), 85, 160, 120);
-        ctx.textAlign = "center";
-		const { body } = await request.get(avatar);
-		const data = await loadImage(body);
-		const { x, y, width, height } = centerImagePart(data, 310, 65, 410, 112);
-		ctx.drawImage(data, x, y, width, height);
+    async run(msg, { cards, image }) {
+	const base = await loadImage(path.join(__dirname, '..', '..', 'assets', 'images', 'draw25.png'));
+		const { body } = await request.get(image);
+			const data = await loadImage(body);
+			const canvas = createCanvas(base.width, base.height);
+			const ctx = canvas.getContext('2d');
+			ctx.drawImage(base, 0, 0);
+			const { x, y, width, height } = centerImagePart(data, 310, 65, 100, 100);
+			ctx.drawImage(data, x, y, width, height);
+			ctx.textBaseline = 'top';
+			ctx.textAlign = 'center';
+			ctx.font = '25px Noto';
+			ctx.fillText(cards.join('\n'), 85, 160, 120);
         return msg.say({ files: [{ attachment: canvas.toBuffer(), name: 'draw25.png' }] });
     }
 };
