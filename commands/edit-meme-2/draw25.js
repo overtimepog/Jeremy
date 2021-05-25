@@ -58,7 +58,7 @@ module.exports = class Draw25Command extends Command {
 			ctx.drawImage(data, 317, 36, 105, 105);
 			ctx.textBaseline = 'top';
 			ctx.textAlign = 'center';
-			ctx.font = '25px Noto';
+			ctx.font = '10px Noto';
 			ctx.fillText(card.join('\n'), 85, 160, 120);
         return msg.say({ files: [{ attachment: canvas.toBuffer(), name: 'draw25.png' }] });
     }
