@@ -4,7 +4,6 @@ const path = require('path');
 const { shortenText } = require('../../util/Canvas');
 const { wrapText } = require('../../util/Canvas');
 const request = require('node-superfetch');
-const path = require('path');
 const { centerImagePart } = require('../../util/Canvas');
 registerFont(path.join(__dirname, '..', '..', 'assets', 'fonts', 'Noto-Regular.ttf'), { family: 'Noto' });
 registerFont(path.join(__dirname, '..', '..', 'assets', 'fonts', 'Noto-CJK.otf'), { family: 'Noto' });
