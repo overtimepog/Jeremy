@@ -32,16 +32,16 @@ module.exports = class Draw25Command extends Command {
 			],
 			args: [
 				{
-					key: 'image',
-					prompt: 'who is drawing the cards?',
-					type: 'image-or-avatar',
-					default: msg => msg.author.displayAvatarURL({ format: 'png', size: 256 })
-				},
-				{
 					key: 'cards',
 					prompt: 'What should the text of the card be?',
 					type: 'string',
 					max: 10
+				},
+				{
+					key: 'image',
+					prompt: 'who is drawing the cards?',
+					type: 'image-or-avatar',
+					default: msg => msg.author.displayAvatarURL({ format: 'png', size: 256 })
 				}
 			]
 		});
@@ -55,7 +55,7 @@ module.exports = class Draw25Command extends Command {
 			const ctx = canvas.getContext('2d');
 			const card = await wrapText(ctx, "​    " + (cards.trim()), 150);
 			ctx.drawImage(base, 0, 0);
-			const { x, y, width, height } = centerImagePart(data, 317, 36, 105, 105);
+			const { x, y, width, height } = (data, 317, 36, 105, 105);
 			ctx.drawImage(data, x, y, width, height);
 			ctx.textBaseline = 'top';
 			ctx.textAlign = 'center';
