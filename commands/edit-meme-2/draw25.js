@@ -55,7 +55,7 @@ module.exports = class Draw25Command extends Command {
 			const ctx = canvas.getContext('2d');
 			const card = await wrapText(ctx, "​    " + (cards.trim()), 150);
 			ctx.drawImage(base, 0, 0);
-			const { x, y, width, height } = centerImagePart(data, 310, 65, 100, 100);
+			const { x, y, width, height } = centerImagePart(data, 317, 36, 105, 105);
 			ctx.drawImage(data, x, y, width, height);
 			ctx.textBaseline = 'top';
 			ctx.textAlign = 'center';
