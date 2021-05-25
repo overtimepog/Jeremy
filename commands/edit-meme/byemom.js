@@ -26,7 +26,7 @@ module.exports = class ByeMomCommand extends Command {
 					key: 'username',
 					prompt: 'whats their name?',
 					type: 'string',
-					default: msg => msg.member.user.username
+					default: msg => msg.author.username
 				},
 				{
 					key: 'text',

@@ -27,7 +27,7 @@ module.exports = class YoutubeCommand extends Command {
 					key: 'user',
 					prompt: 'Whats this persons youtube name?',
 					type: 'string',
-					default: msg => msg.member.user.username
+					default: msg => msg.author.username
 				},
 				{
 					key: 'text',
