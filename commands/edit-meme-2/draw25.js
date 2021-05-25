@@ -41,7 +41,7 @@ module.exports = class Draw25Command extends Command {
 					key: 'cards',
 					prompt: 'What should the text of the card be?',
 					type: 'string',
-					max: 10
+					max: 50
 				}
 			]
 		});
