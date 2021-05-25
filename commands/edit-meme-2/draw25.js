@@ -56,9 +56,6 @@ module.exports = class Draw25Command extends Command {
         ctx.textAlign = "center";
 		const { body } = await request.get(guy);
 		const data = await loadImage(body);
-		const canvas = createCanvas(base.width, base.height);
-		const ctx = canvas.getContext('2d');
-		ctx.drawImage(base, 0, 0);
 		const { x, y, width, height } = centerImagePart(data, 310, 65, 410, 112);
 		ctx.drawImage(data, x, y, width, height);
         return msg.say({ files: [{ attachment: canvas.toBuffer(), name: 'draw25.png' }] });
