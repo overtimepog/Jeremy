@@ -60,7 +60,7 @@ module.exports = class Draw25Command extends Command {
 			ctx.textAlign = 'center';
 			ctx.fillStyle = "white"
 			ctx.font = '25px Noto';
-			ctx.fillText(card.join('\n'), 120, 165, 220);
+			ctx.fillText(card.join('\n'), 120, 168, 220);
         return msg.say({ files: [{ attachment: canvas.toBuffer(), name: 'draw25.png' }] });
     }
 };
