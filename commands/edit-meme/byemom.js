@@ -1,6 +1,6 @@
 const Command = require('../../structures/Command');
 const Meme = require("memer-api");
-const memer = new Meme();
+const memer = new Meme("M1blMbF8ds8");
 const Discord = require("discord.js")
 
 module.exports = class ByeMomCommand extends Command {
