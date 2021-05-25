@@ -53,13 +53,14 @@ module.exports = class Draw25Command extends Command {
 			const data = await loadImage(body);
 			const canvas = createCanvas(base.width, base.height);
 			const ctx = canvas.getContext('2d');
+			const card = await wrapText(ctx, "​    " + (cards.trim()), 150);
 			ctx.drawImage(base, 0, 0);
 			const { x, y, width, height } = centerImagePart(data, 310, 65, 100, 100);
 			ctx.drawImage(data, x, y, width, height);
 			ctx.textBaseline = 'top';
 			ctx.textAlign = 'center';
 			ctx.font = '25px Noto';
-			ctx.fillText(cards.join('\n'), 85, 160, 120);
+			ctx.fillText(card.join('\n'), 85, 160, 120);
         return msg.say({ files: [{ attachment: canvas.toBuffer(), name: 'draw25.png' }] });
     }
 };
