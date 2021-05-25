@@ -41,7 +41,7 @@ module.exports = class Draw25Command extends Command {
 					key: 'cards',
 					prompt: 'What should the text of the card be?',
 					type: 'string',
-					max: 50
+					max: 10
 				}
 			]
 		});
@@ -53,13 +53,13 @@ module.exports = class Draw25Command extends Command {
 			const data = await loadImage(body);
 			const canvas = createCanvas(base.width, base.height);
 			const ctx = canvas.getContext('2d');
-			const card = await wrapText(ctx, "​    " + (cards.trim()), 148);
+			const card = await wrapText(ctx, "​    " + (cards.trim()), 150);
 			ctx.drawImage(base, 0, 0);
 			ctx.drawImage(data, 317, 36, 105, 105);
 			ctx.textBaseline = 'top';
 			ctx.textAlign = 'center';
-			ctx.font = '15px Noto';
-			ctx.fillText(card.join('\n'), 86, 130, 150);
+			ctx.font = '25px Noto';
+			ctx.fillText(card.join('\n'), 85, 165, 120);
         return msg.say({ files: [{ attachment: canvas.toBuffer(), name: 'draw25.png' }] });
     }
 };
