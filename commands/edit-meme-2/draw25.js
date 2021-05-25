@@ -35,7 +35,7 @@ module.exports = class Draw25Command extends Command {
 					key: 'image',
 					prompt: 'who is drawing the cards?',
 					type: 'image-or-avatar',
-					default: msg => msg.author.displayAvatarURL({ format: 'png', size: 512 })
+					default: msg => msg.author.displayAvatarURL({ format: 'png', size: 256 })
 				},
 				{
 					key: 'cards',
