@@ -14,7 +14,7 @@ module.exports = class Draw25Command extends Command {
 			aliases: ['draw25'],
 			group: 'edit-meme-2',
 			memberName: 'draw25',
-			description: 'Sends a "Draw 25" meme with the passwords of your choice.',
+			description: 'Sends a "Draw 25" meme with the person of your choice.',
 			throttling: {
 				usages: 1,
 				duration: 10
@@ -30,14 +30,14 @@ module.exports = class Draw25Command extends Command {
 			],
 			args: [
 				{
-					key: 'cards',
-					prompt: 'What should the text of the card be?',
-					type: 'string',
-					max: 50
+					key: 'avatar',
+					prompt: 'who is saying bye?',
+					type: 'image-or-avatar',
+					default: msg => msg.author.displayAvatarURL({ format: 'png', size: 512 })
 				},
 				{
-					key: 'guy',
-					prompt: 'who is the guy?',
+					key: 'cards',
+					prompt: 'What should the text of the card be?',
 					type: 'string',
 					max: 50
 				}
@@ -54,8 +54,13 @@ module.exports = class Draw25Command extends Command {
         const card = await wrapText(ctx, "​    " + (cards.trim()), 150);
         ctx.fillText(card.join('\n'), 85, 160, 120);
         ctx.textAlign = "center";
-        const guys = await wrapText(ctx, guy, 180);
-        ctx.fillText(guys.join('\n'), base.width*3/4, 40, 160);
+		const { body } = await request.get(guy);
+		const data = await loadImage(body);
+		const canvas = createCanvas(base.width, base.height);
+		const ctx = canvas.getContext('2d');
+		ctx.drawImage(base, 0, 0);
+		const { x, y, width, height } = centerImagePart(data, 310, 65, 410, 112);
+		ctx.drawImage(data, x, y, width, height);
         return msg.say({ files: [{ attachment: canvas.toBuffer(), name: 'draw25.png' }] });
     }
 };
