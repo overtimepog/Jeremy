@@ -1,6 +1,6 @@
 const Command = require('../../structures/Command');
 const Meme = require("memer-api");
-const memer = new Meme("M1blMbF8ds8");
+const memer = new Meme();
 const Discord = require("discord.js")
 
 module.exports = class ByeMomCommand extends Command {
@@ -26,7 +26,7 @@ module.exports = class ByeMomCommand extends Command {
 					key: 'username',
 					prompt: 'whats their name?',
 					type: 'string',
-					default: msg => msg.author.username
+					default: msg => msg.user.username
 				},
 				{
 					key: 'text',
